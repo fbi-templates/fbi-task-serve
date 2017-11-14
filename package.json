@@ -1,0 +1,14 @@
+{
+  "name": "fbi-task-serve",
+  "version": "1.0.0",
+  "description": "Static server using koa.",
+  "main": "index.js",
+  "scripts": {},
+  "author": "fbi",
+  "license": "MIT",
+  "repository": {},
+  "devDependencies": {
+    "koa": "2.4.1",
+    "koa-static": "4.0.1"
+  }
+}
