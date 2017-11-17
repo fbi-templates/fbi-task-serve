@@ -7,7 +7,7 @@
   "author": "fbi",
   "license": "MIT",
   "repository": {},
-  "devDependencies": {
+  "dependencies": {
     "koa": "2.4.1",
     "koa-static": "4.0.1"
   }
