@@ -26,8 +26,8 @@ function listen(app) {
       server.close()
     })
     server.on('error', err => {
-      ctx.logger.warn(`port ${port} is already in used.`)
-      listen(app)
+      ctx.logger.warn(`Port ${port} is already in use, trying ${startPort}...`)
+      resolve(listen(app))
     })
   })
 }
@@ -36,10 +36,9 @@ async function start() {
   try {
     const app = new Koa()
     app.use(serve(root))
-
     const port = await listen(app)
     ctx.logger.success(`Server runing at http://${host}:${port}`)
-    ctx.logger.info(`Server root: ${root}`)
+    ctx.logger.log(`Server root: ${root}`)
   } catch (err) {
     ctx.logger.error(err)
   }
