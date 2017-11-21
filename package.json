@@ -1,14 +1,28 @@
 {
   "name": "fbi-task-serve",
   "version": "1.0.3",
-  "description": "Static server using koa.",
+  "description": "Static server using koa2.",
   "main": "index.js",
-  "scripts": {},
   "author": "fbi",
   "license": "MIT",
   "repository": {},
+  "scripts": {
+    "publish-patch": "npm version patch && git push && git push --tags",
+    "publish-minor": "npm version minor && git push && git push --tags",
+    "publish-major": "npm version major && git push && git push --tags"
+  },
   "dependencies": {
     "koa": "2.4.1",
     "koa-static": "4.0.1"
+  },
+  "fbi": {
+    "template": {
+      "name": "fbi-task-serve"
+    },
+    "tasks": {
+      "serve": {
+        "alias": "s"
+      }
+    }
   }
 }
