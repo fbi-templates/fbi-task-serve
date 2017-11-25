@@ -2,9 +2,11 @@ const http = require('http')
 const Koa = require('koa')
 const serve = require('koa-static')
 
-let startPort = taskParams
-  ? (taskParams.p || 3000) * 1
-  : ctx.options.server ? ctx.options.server.port : 3000
+// Get task params
+const taskParams = ctx.task.getParams('serve')
+
+// Service start port
+let startPort = taskParams.port * 1 || 3000
 
 const host = ctx.options.server
   ? ctx.options.server.host || 'localhost'
