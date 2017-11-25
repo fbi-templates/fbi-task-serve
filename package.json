@@ -1,6 +1,6 @@
 {
   "name": "fbi-task-serve",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Static server using koa2.",
   "main": "index.js",
   "author": "fbi",
