@@ -3,9 +3,6 @@
   "version": "1.2.1",
   "description": "Static server using koa2.",
   "main": "index.js",
-  "author": "fbi",
-  "license": "MIT",
-  "repository": {},
   "scripts": {
     "release-patch": "npm version patch && git push && git push --tags",
     "release-minor": "npm version minor && git push && git push --tags",
@@ -15,6 +12,17 @@
     "koa": "2.4.1",
     "koa-static": "4.0.1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fbi-templates/fbi-task-serve.git"
+  },
+  "keywords": ["server", "static-server", "koajs", "fbi-task", "fbi"],
+  "author": "neikvon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fbi-templates/fbi-task-serve/issues"
+  },
+  "homepage": "https://github.com/fbi-templates/fbi-task-serve#readme",
   "fbi": {
     "template": {
       "name": "fbi-task-serve"
