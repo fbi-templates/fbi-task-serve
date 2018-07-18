@@ -1,6 +1,6 @@
 {
   "name": "fbi-task-serve",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Static server with directory listings.",
   "main": "index.js",
   "scripts": {},
