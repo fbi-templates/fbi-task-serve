@@ -3,11 +3,7 @@
   "version": "2.0.0",
   "description": "Static server with directory listings.",
   "main": "index.js",
-  "scripts": {
-    "release-patch": "npm version patch && git push && git push --tags",
-    "release-minor": "npm version minor && git push && git push --tags",
-    "release-major": "npm version major && git push && git push --tags"
-  },
+  "scripts": {},
   "dependencies": {
     "express": "^4.16.3",
     "get-port": "^3.2.0",
