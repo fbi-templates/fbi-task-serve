@@ -43,11 +43,4 @@ $ fbi serve -port=9999
 ## License
 [MIT](https://opensource.org/licenses/MIT)
 
-## Changelog
-
-- **2.0.0** (2018.07.05)
-  - replace `koa` with `express`
-  - support directory listings
-
-- **1.2.0** (2017.11.25)
-  - init
+## [Changelog](./CHANGELOG.md)
